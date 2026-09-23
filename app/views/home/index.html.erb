@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Khoob Singh Dairy | Fresh & Pure</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f7faf7;
+      color: #26352a;
+    }
+  
+
+     .price {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #318047;
+ 
+}
+
+  .order-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #318047;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.order-btn:hover {
+  opacity: 0.85;
+}
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #285d35;
+    }
+
+    .logo span {
+      color: #111;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 24px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #285d35;
+    }
+
+    .hero {
+      min-height: 570px;
+      padding: 80px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      background: linear-gradient(135deg, #edf8ed, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #dcefdc;
+      color: #285d35;
+      padding: 9px 16px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #318047;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #606b63;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 8px;
+      background: #318047;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #246535;
+    }
+
+    .hero-icon {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 120px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    .section {
+      padding: 80px 7%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #69736c;
+      margin-bottom: 45px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .product {
+      background: white;
+      padding: 32px 22px;
+      border-radius: 16px;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-icon {
+      font-size: 55px;
+      margin-bottom: 18px;
+    }
+
+    .product h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      color: #69736c;
+      line-height: 1.5;
+    }
+
+    .about {
+      background: #edf8ed;
+    }
+
+    .about-box {
+      max-width: 850px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #566158;
+    }
+
+    .contact {
+      background: #26352a;
+      color: white;
+    }
+
+    .contact p {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #172019;
+      color: #cbd2cc;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 6%;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-icon {
+        width: 230px;
+        height: 230px;
+        font-size: 80px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      🥛 <span>Khoob Singh</span> Dairy
+    </div>
+
+```
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+```
+
+  </header>
+
+  <section class="hero" id="home">
+
+```
+<div class="hero-content">
+
+  <div class="tag">
+    🐄 Fresh • Pure • Trusted
+  </div>
+
+  <h1>
+    Fresh Dairy Products
+    <span>For Your Family.</span>
+  </h1>
+
+  <p>
+    Welcome to Khoob Singh Dairy.
+    We provide fresh and quality dairy products
+    with care, freshness and trust.
+  </p>
+
+  <a href="#products" class="button">
+    Explore Products →
+  </a>
+
+</div>
+
+<div class="hero-icon">
+  🐄🥛
+</div>
+```
+
+  </section>
+
+  <section class="section" id="products">
+
+```
+<h2>Our Products</h2>
+
+<p class="subtitle">
+  Fresh dairy products for your everyday needs.
+</p>
+
+<div class="products">
+
+  <div class="product">
+    <div class="product-icon">🥛</div>
+    <h3>Fresh Milk</h3>
+    <p>
+      Fresh and quality milk for your daily needs.
+    </p>
+ <p class="price">₹70 / litre</p>
+ <a href="https://wa.me/917668826263?text=Hello%20Khoob%20Singh%20Dairy%2C%20mujhe%20order%20karna%20hai." class="order-btn" target="_blank">Order Now</a>
+  </div>
+
+  <div class="product">
+    <div class="product-icon">🧀</div>
+    <h3>Paneer</h3>
+    <p>
+      Soft, fresh and delicious paneer.
+    </p>
+  <p class="price">₹400 / kg</p>
+  <a href="https://wa.me/917668826263?text=Hello%20Khoob%20Singh%20Dairy%2C%20mujhe%20order%20karna%20hai." class="order-btn" target="_blank">Order Now</a>
+  </div>
+
+  <div class="product">
+    <div class="product-icon">🍶</div>
+    <h3>Fresh Dahi</h3>
+    <p>
+      Fresh and creamy curd for every meal.
+    </p>
+  <p class="price">₹70 / kg</p>
+  <a href="https://wa.me/917668826263?text=Hello%20Khoob%20Singh%20Dairy%2C%20mujhe%20order%20karna%20hai." class="order-btn" target="_blank">Order Now</a>
+  </div>
+
+  <div class="product">
+    <div class="product-icon">🫙</div>
+    <h3>Pure Ghee</h3>
+    <p>
+      Rich and traditional dairy goodness.
+    </p>
+  <p class="price">₹700 / litre</p>
+  <a href="https://wa.me/917668826263?text=Hello%20Khoob%20Singh%20Dairy%2C%20mujhe%20order%20karna%20hai." class="order-btn" target="_blank">Order Now</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <section class="section about" id="about">
+
+```
+<h2>About Khoob Singh Dairy</h2>
+
+<p class="subtitle">
+  Quality • Freshness • Trust
+</p>
+
+<div class="about-box">
+
+  <p>
+    Khoob Singh Dairy is focused on providing fresh,
+    quality dairy products to families.
+    Our aim is to maintain freshness and quality
+    while building long-term trust with our customers.
+  </p>
+
+</div>
+```
+
+  </section>
+
+  <section class="section contact" id="contact">
+
+```
+<h2>Contact Us</h2>
+
+<p>🥛 Khoob Singh Dairy</p>
+
+<p>📞 Phone: Add your phone number</p>
+
+<p>📍 Address: Add your dairy address</p>
+```
+
+  </section>
+
+  <footer>
+    © 2026 Khoob Singh Dairy • Freshness You Can Trust
+  </footer>
+
+</body>
+</html>
